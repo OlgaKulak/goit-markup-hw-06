@@ -57,47 +57,45 @@
                 </use>
               </svg>
             </button>
-            <div class="form-feedback">
-              <form class="form">
-           <h1 class="modal-title">Залиште свої дані, ми вам передзвонимо</h1>
+            <form class="form">
+              <h1 class="modal-title">Залиште свої дані, ми вам передзвонимо</h1>
+                 <div class="form-field">
+                  <label for="name">Ім'я</label>
+                   <input class="form-input" type="text" name="name" id="name"/ required>
+                <svg class="icon-black" width="18" height="18">
+                   <use href="./images/sprint-icons.svg#icon-person-black-18dp">
+                   </use>
+                 </svg> 
+                 </div>
               <div class="form-field">
-               <label for="name">Ім'я</label>
-                <input class="form-input" type="text" name="name" id="name"/>
-             <svg class="icon-black" width="18" height="18">
-                <use href="./images/sprint-icons.svg#icon-person-black-18dp">
-                </use>
-              </svg> 
+               <label class="form-label"  for="tel">Телефон</label>
+               <input class="form-input" type="tel" name="tel" id="tel"/ required>
+              <svg class="icon-black" width="18" height="18">
+                 <use href="./images/sprint-icons.svg#icon-phone-black-18dp">
+                 </use>
+               </svg>
               </div>
-           <div class="form-field">
-            <label class="form-label"  for="tel">Телефон</label>
-            <input class="form-input" type="tel" name="tel" id="tel"/>
-           <svg class="icon-black" width="18" height="18">
-              <use href="./images/sprint-icons.svg#icon-phone-black-18dp">
-              </use>
-            </svg>
-           </div>
-           <div class="form-field">
-            <label for="mail">Пошта</label>
-            <input class="form-input" type="email" name="mail" id="mail"/>
-           <svg class="icon-black" width="18" height="18">
-              <use href="./images/sprint-icons.svg#icon-email-black-18dp">
-              </use>
-            </svg> 
-           </div>
-           <div class="form-field">
-            <label for="comment">Коментар</label>
-            <textarea class="form-comment" type="comment" name="comment" rows="5" placeholder="Введіть текст" id="comment"/></textarea>
-           </div>
-
-            <label class="form-policy">
-            <input class="check-input visually-hidden" type="checkbox" name="policy"/>
-              <span class="check-box"></span>
-              Погоджуюся з розсилкою та приймаю <a class="policy-link" href="">Умови договору</a>
-          </label>
-         
-           <button class="button primary" type="submit">Відправити</button>
-         </form> 
-            </div>
+              <div class="form-field">
+               <label for="mail">Пошта</label>
+               <input class="form-input" type="email" name="mail" id="mail"/ required>
+              <svg class="icon-black" width="18" height="18">
+                 <use href="./images/sprint-icons.svg#icon-email-black-18dp">
+                 </use>
+               </svg> 
+              </div>
+              <div class="form-field-last">
+               <label for="comment">Коментар</label>
+               <textarea class="form-comment" type="comment" name="comment" rows="5" placeholder="Введіть текст" id="comment"/></textarea>
+              </div>
+   
+               <label class="form-policy">
+               <input class="check-input visually-hidden" type="checkbox" name="policy" required/>
+                 <span class="check-box"></span>
+                 Погоджуюся з розсилкою та приймаю <a class="policy-link" href="">Умови договору</a>
+             </label>
+            
+              <button class="button primary" type="submit">Відправити</button>
+            </form> 
           </div>
         </div>
 
@@ -472,7 +470,7 @@
       <h3 class="subscribe-title">Підпишіться на розсилку</h3>
       <form class="subscribe">
         <lable>
-          <input class="subscribe-email" type="text" name="email" placeholder="E-mail"/>
+          <input class="subscribe-email" type="text" name="email" placeholder="E-mail" required/>
         </lable>
 
           <button class="button primary btn subscribe" type="submit">Підписатися <svg class="icon-send" width="24" height="24">
