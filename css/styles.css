@@ -69,13 +69,14 @@ button {
 }
  textarea {
   resize: none;
-   position: relative;
-   padding: 12px 16px;
-   font-family: inherit;
-   font-size: inherit;
-   border: 1px solid rgba(33, 33, 33, 0.2);
-   border-radius: 4px;
-    cursor: pointer;
+  height: 120px;
+  position: relative;
+  padding: 12px 16px;
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
  }
 
 label {
@@ -83,6 +84,10 @@ label {
   display: inline-block;
   margin-bottom: 4px;
   color: var(--secondary-text-color);
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
 
 }
 
@@ -289,14 +294,21 @@ label {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+.form-field-last {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.form-comment{
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .icon-black {
   position: absolute;
-  top: 11px;
+  top: 50%;
   left: 12px;
 
-  transform: translateY( 100%);
-  /* display: inline-block; */
   fill: currentColor;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -336,15 +348,25 @@ label {
 .policy-link {
   color: var(--accent-color);
 }
-.form-field textarea::placeholder{
+.form-field-last textarea::placeholder{
   color: rgba(117, 117, 117, 0.5);
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
 }
 
 .form-policy {
-display: block;
+display: inline-flex;
+align-items: center;
+text-align: center;
 margin-top: 20px;
 margin-bottom: 30px;
-padding-left: 36px;
+padding-left: 12px;
+font-family: inherit;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
 }
 
 .check-box{
@@ -783,6 +805,7 @@ display: flex;
 .subscribe-email {
   width: 358px;
   height: 50px;
+  color: var(--primary-white-color);
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
   /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
